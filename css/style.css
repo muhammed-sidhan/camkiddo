@@ -101,6 +101,15 @@ ul ul,
 ol ul,
 ul ol {
   margin-bottom: 0; }
+button{
+border-color:white;
+border-weight:5px
+background-color:transparent;
+  color:white
+  
+
+    
+}
 
 dt {
   font-weight: 700; }
