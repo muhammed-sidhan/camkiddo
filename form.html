@@ -46,7 +46,7 @@
 											<div id="form-message-success" class="mb-4">
 												Your message was sent, thank you!
 											</div>
-											<form method="POST" id="submit-form" name="contactForm" class="contactForm" action="">
+											<form method="POST" id="form" name="contactForm" class="contactForm" action="">
 												<div class="row">
 													<div class="col-md-12">
 														<div class="form-group">
@@ -132,12 +132,12 @@
 			<!--HTML FORM SUBMISSION-->
 
 <script>
-        $("#submit-form").submit((e)=>{
+        $("#form").submit((e)=>{
             e.preventDefault()
             $.ajax({
                 url:"https://script.google.com/macros/s/AKfycbxnKuTanjD2C0U3KsoIfAyqPJTVZDfR1FhIqrMoKsQc2p_IqD1lH9Z5bcRW51khRgyX/exec",
-                url:"",
-                data:$("#submit-form").serialize(),
+                url:"https://script.google.com/macros/s/AKfycbxnKuTanjD2C0U3KsoIfAyqPJTVZDfR1FhIqrMoKsQc2p_IqD1lH9Z5bcRW51khRgyX/exec",
+                data:$("#form").serialize(),
                 method:"post",
                 success:function (response){
                     alert("We can get your feeedback..! thank you")
